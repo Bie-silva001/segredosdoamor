@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Estratégias Secretas para Reacender o Romance | Thiago Finch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .faq-item.highlight {
+            border: 2px solid #e53e3e;
+            position: relative;
+        }
+        .faq-item.highlight::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border: 2px solid #e53e3e;
+            border-radius: 0.5rem;
+            pointer-events: none;
+        }
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .progress-bar {
+            height: 100%;
+            background: #e53e3e;
+            border-radius: 5px;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(229, 62, 62, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(229, 62, 62, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(229, 62, 62, 0);
+            }
+        }
+        .countdown {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-heart text-red-600 text-2xl mr-2"></i>
+                <span class="text-xl font-bold text-gray-800">A Cartada do amor.</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <span class="text-sm text-gray-600"><i class="fas fa-shield-alt text-green-500 mr-1"></i> Site Seguro</span>
+                <span class="text-sm text-gray-600"><i class="fas fa-lock text-green-500 mr-1"></i> Privacidade Garantida</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-600 to-pink-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <span class="inline-block bg-white text-red-600 px-3 py-1 rounded-full text-sm font-semibold mb-4">LANÇAMENTO EXCLUSIVO</span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">8 Estratégias Secretas para Reacender o Romance e Salvar Seu Relacionamento</h1>
+                <p class="text-xl mb-8">Descubra as técnicas comprovadas que especialistas em relacionamentos não querem que você saiba!</p>
+                
+                <div class="bg-white rounded-lg shadow-xl p-6 text-gray-800 max-w-3xl mx-auto">
+                    <div class="video-container mb-4">
+                        <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&controls=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="progress-container">
+                        <div id="progressBar" class="progress-bar"></div>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Assista até pelo menos 50% do vídeo para liberar o acesso</p>
+                    
+                    <div id="countdownContainer" class="mb-6 hidden">
+                        <p class="text-sm font-semibold mb-2">OFERTA POR TEMPO LIMITADO!</p>
+                        <div class="flex justify-center space-x-2">
+                            <div class="bg-red-600 text-white px-3 py-1 rounded countdown" id="hours">00</div>
+                            <span class="text-red-600 font-bold">:</span>
+                            <div class="bg-red-600 text-white px-3 py-1 rounded countdown" id="minutes">00</div>
+                            <span class="text-red-600 font-bold">:</span>
+                            <div class="bg-red-600 text-white px-3 py-1 rounded countdown" id="seconds">00</div>
+                        </div>
+                    </div>
+                    
+                    <button id="ctaButton" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                        <span id="buttonText">QUERO ACESSAR AS 8 ESTRATÉGIAS AGORA!</span>
+                        <span id="lockedIcon" class="ml-2"><i class="fas fa-lock"></i></span>
+                        <span id="unlockedIcon" class="ml-2 hidden"><i class="fas fa-lock-open"></i></span>
+                    </button>
+                    
+                    <div class="flex items-center justify-center mt-4">
+                        <img src="https://via.placeholder.com/50" alt="Secure Payment" class="h-8 mr-2">
+                        <img src="https://via.placeholder.com/50" alt="SSL" class="h-8 mr-2">
+                        <img src="https://via.placeholder.com/50" alt="Guarantee" class="h-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O Que Você Vai Descobrir Neste Método Exclusivo</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex items-start">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-heart text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Como Reconquistar Seu Parceiro</h3>
+                        <p class="text-gray-600">Mesmo que ele já tenha perdido o interesse ou esteja distante emocionalmente.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-fire text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Reacenda a Paixão</h3>
+                        <p class="text-gray-600">Técnicas para trazer de volta aquela chama que vocês tinham no início do relacionamento.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-comments text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Comunicação Eficaz</h3>
+                        <p class="text-gray-600">Aprenda a se comunicar de forma que seu parceiro realmente te ouça e se conecte com você.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-magic text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Gatilhos Emocionais</h3>
+                        <p class="text-gray-600">Descubra os segredos psicológicos que fazem seu parceiro se apaixonar por você novamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O Que Dizem Quem Já Aplicou</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ana C.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Depois de 12 anos de casamento, nosso relacionamento estava esfriando. Apliquei a estratégia 3 e foi como voltar ao nosso primeiro ano juntos! Meu marido não para de me elogiar e estamos mais conectados do que nunca."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Carlos R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Minha esposa estava prestes a pedir o divórcio quando encontrei o método do Thiago. Em 3 semanas aplicando as estratégias, ela mudou completamente! Disse que eu era um homem novo. Salvamos nosso casamento graças a essas técnicas."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Juliana" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Juliana M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Nunca imaginei que pequenas mudanças poderiam ter tanto impacto! Meu namorado estava frio e distante, mas com a estratégia 5 ele voltou a ser carinhoso como antes. Estamos planejando nosso casamento agora!"</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-red-600 text-white p-6 rounded-lg max-w-4xl mx-auto text-center">
+                <h3 class="text-2xl font-bold mb-4">ATENÇÃO: Resultados Variam de Pessoa para Pessoa</h3>
+                <p>Os depoimentos acima são de clientes reais que aplicaram corretamente as estratégias ensinadas por Thiago Finch. Seus resultados dependem exclusivamente da sua dedicação em aplicar o método.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Author -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Quem é Thiago Finch?</h2>
+                
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Thiago Finch" class="w-48 h-48 rounded-full mx-auto border-4 border-red-600 shadow-lg">
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <p class="text-gray-600 mb-4">Com mais de 15 anos de experiência como terapeuta de casais, Thiago Finch já ajudou mais de 3.000 pessoas a transformarem seus relacionamentos.</p>
+                        <p class="text-gray-600 mb-4">Formado em Psicologia com especialização em Terapia de Casal pela Universidade de Harvard, Thiago desenvolveu um método único baseado em pesquisas científicas e experiência clínica.</p>
+                        <p class="text-gray-600">Seu trabalho já foi destaque em revistas como Veja, Época e no programa Mais Você. Agora, pela primeira vez, ele revela suas estratégias mais poderosas em um formato acessível a todos.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Por Que Essas Estratégias São Tão Eficazes?</h3>
+                    <p class="text-gray-600 mb-4">Ao contrário dos conselhos genéricos que você encontra por aí, o método de Thiago Finch é baseado em:</p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li><strong>Neurociência do Amor:</strong> Técnicas que ativam os centros de prazer e conexão no cérebro</li>
+                        <li><strong>Psicologia Comportamental:</strong> Padrões que influenciam inconscientemente o comportamento do parceiro</li>
+                        <li><strong>Antropologia Relacional:</strong> Comportamentos ancestrais que ainda governam nossos relacionamentos</li>
+                        <li><strong>Estudos de Casos Reais:</strong> O que realmente funciona com pessoas comuns em relacionamentos reais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 bg-gradient-to-r from-red-600 to-pink-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Não Deixe Seu Relacionamento Esfriar!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Aproveite esta oportunidade única para transformar seu relacionamento hoje mesmo.</p>
+            
+            <div class="bg-white rounded-lg shadow-xl p-6 text-gray-800 max-w-3xl mx-auto">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-red-100 text-red-600 px-4 py-2 rounded-full font-bold">OFERTA POR TEMPO LIMITADO</div>
+                </div>
+                
+                <div class="grid md:grid-cols-1 gap-4 mb-8">
+                    <div class="border-2 border-red-600 rounded-lg p-4 relative max-w-md mx-auto">
+                        <div class="absolute top-0 right-0 bg-red-600 text-white text-xs px-2 py-1 rounded-bl rounded-tr">OFERTA QUASE ESGOTADA</div>
+                        <h3 class="font-bold text-lg mb-2">COMPLETO</h3>
+                        <p class="text-3xl font-bold text-red-600 mb-2">R$ 197</p>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li><i class="fas fa-check text-green-500 mr-1"></i> E-book Completo</li>
+                            <li><i class="fas fa-check text-green-500 mr-1"></i> 8 Estratégias Detalhadas</li>
+                            <li><i class="fas fa-check text-green-500 mr-1"></i> 5 Bônus Exclusivos</li>
+                            <li><i class="fas fa-check text-green-500 mr-1"></i> Acesso à Comunidade</li>
+                        </ul>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300 transform hover:scale-105 pulse">ESCOLHER</button>
+                    </div>
+                </div>
+                
+                <div class="bg-red-100 border-l-4 border-red-600 p-4 text-left text-gray-800 mb-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-gift text-red-600 text-xl"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="text-sm font-bold">BÔNUS EXCLUSIVOS (apenas no pacote completo)</h3>
+                            <p class="text-sm">Guia de Reconquista em 7 Dias + Comunidade Secreta + Áudios de Hipnose para Relacionamento + E-book "Linguagem do Amor" + Workshop Online</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-green-500 text-2xl mr-3"></i>
+                        <div>
+                            <p class="font-semibold text-gray-800">COMPRA 100% SEGURA</p>
+                            <p class="text-sm text-gray-600">Seu pagamento está protegido por criptografia SSL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Dúvidas Comuns Respondidas</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6" id="faqContainer">
+                <!-- FAQ Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-clock text-red-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Tempo para Resultados</h3>
+                        </div>
+                        <p class="text-gray-600">A maioria dos alunos começa a notar melhorias em 7-14 dias. Porém, resultados mais consistentes aparecem após 3-4 semanas de aplicação consistente das estratégias.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-heart-broken text-red-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Casos de Separação</h3>
+                        </div>
+                        <p class="text-gray-600">Sim! Nossas técnicas são especialmente eficazes para reconquistar. Já ajudamos mais de 1.200 casais que estavam prestes a se separar.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-box-open text-red-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Entrega do Material</h3>
+                        </div>
+                        <p class="text-gray-600">Acesso imediato após a compra. Você recebe login para nossa plataforma exclusiva com todos os materiais em diversos formatos para seu aprendizado.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-shield-alt text-red-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Garantia Total</h3>
+                        </div>
+                        <p class="text-gray-600">7 dias de garantia incondicional. Se não gostar, devolvemos seu dinheiro sem questionamentos. Risco zero para você experimentar.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-heart text-red-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Thiago Finch</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Transformando relacionamentos desde 2010</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Thiago Finch. Todos os direitos reservados.</p>
+                <p class="mt-2">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depoimentos reais de resultados individuais podem variar.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="#" class="hover:text-white">Termos de Uso</a>
+                    <a href="#" class="hover:text-white">Política de Privacidade</a>
+                    <a href="#" class="hover:text-white">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Video progress tracking
+        const videoPlayer = document.getElementById('videoPlayer');
+        const progressBar = document.getElementById('progressBar');
+        const ctaButton = document.getElementById('ctaButton');
+        const buttonText = document.getElementById('buttonText');
+        const lockedIcon = document.getElementById('lockedIcon');
+        const unlockedIcon = document.getElementById('unlockedIcon');
+        const countdownContainer = document.getElementById('countdownContainer');
+        
+        let videoDuration = 0;
+        let currentProgress = 0;
+        let progressInterval;
+        
+        // Simulate video duration (in a real scenario, you'd get this from the actual video)
+        function initVideo() {
+            videoDuration = 300; // 5 minutes in seconds (reduced from 10)
+            startProgressTracking();
+            startCountdown();
+        }
+        
+        function startProgressTracking() {
+            progressInterval = setInterval(() => {
+                currentProgress += 2; // Increased from 1 to 2 seconds per interval
+                const progressPercent = (currentProgress / videoDuration) * 100;
+                progressBar.style.width = `${progressPercent}%`;
+                
+                if (progressPercent >= 50) {
+                    unlockButton();
+                }
+                
+                if (progressPercent >= 100) {
+                    clearInterval(progressInterval);
+                }
+            }, 500); // Changed interval from 1000ms to 500ms (twice as fast)
+        }
+        
+        function unlockButton() {
+            ctaButton.disabled = false;
+            lockedIcon.classList.add('hidden');
+            unlockedIcon.classList.remove('hidden');
+            buttonText.textContent = 'QUERO ACESSAR AS 8 ESTRATÉGIAS AGORA!';
+            countdownContainer.classList.remove('hidden');
+            clearInterval(progressInterval);
+        }
+        
+        // Countdown timer
+        function startCountdown() {
+            let hours = 2;
+            let minutes = 0;
+            let seconds = 0;
+            
+            const countdownInterval = setInterval(() => {
+                if (seconds === 0) {
+                    if (minutes === 0) {
+                        if (hours === 0) {
+                            clearInterval(countdownInterval);
+                            return;
+                        }
+                        hours--;
+                        minutes = 59;
+                    } else {
+                        minutes--;
+                    }
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+                
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+        
+        // FAQ accordion and highlight
+        document.querySelectorAll('#faqContainer .faq-item').forEach(item => {
+            const button = item.querySelector('button');
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            button.addEventListener('click', (e) => {
+                // Toggle content
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                // Stop propagation to prevent triggering highlight on content click
+                e.stopPropagation();
+            });
+            
+            // Add highlight on item click
+            item.addEventListener('click', () => {
+                // Remove highlight from all items first
+                document.querySelectorAll('#faqContainer .faq-item').forEach(i => {
+                    i.classList.remove('highlight');
+                });
+                // Add highlight to clicked item
+                item.classList.add('highlight');
+            });
+        });
+        
+        // Initialize
+        window.addEventListener('load', initVideo);
+    </script>
+</body>
+</html>
